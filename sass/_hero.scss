@@ -8,14 +8,56 @@
   -327px top -244px,$gradient-primary;
 
   border-radius: 0px 0px 0px 100px;
-
-  padding-top: 100px;
 }
 
 .hero__content {
-  display: none;
+  display: block;
+  text-align: center;
+  padding-top: 1px;
 }
 
 h1 {
-  margin: 0;
+  margin-top: 195px;
+  font-weight: 600;
+  color: $white;
+  line-height: 55px;
+  font-size: 36px;
+  letter-spacing: -1px;
+  margin-bottom: 0px;
+}
+
+.hero__p {
+  color: $white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 0px 30px;
+}
+
+
+// hero CTAs btns
+.hero__ctas {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.hero__ctas a:nth-child(1) {
+  background-color: $white;
+  color: $secondary-color;
+  font-weight: 700;
+  font-family: $ff-secondary;
+  padding: 15px 17px;
+  border-radius: 28px;
+}
+
+.hero__ctas a:nth-child(2) {
+  background-color: transparent;
+  color: $white;
+  font-weight: 700;
+  font-family: $ff-secondary;
+  border-radius: 28px;
+  border: 1px solid #FFFFFF;
+  padding: 15px 17px;
 }

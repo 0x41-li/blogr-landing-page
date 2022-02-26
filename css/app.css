@@ -200,15 +200,56 @@ nav.open {
   height: 600px;
   background: url("../images/bg-pattern-intro-mobile.svg") no-repeat left -327px top -244px, linear-gradient(135deg, #FF8F71, #FF3E55);
   border-radius: 0px 0px 0px 100px;
-  padding-top: 100px;
 }
 
 .hero__content {
-  display: none;
+  display: block;
+  text-align: center;
+  padding-top: 1px;
 }
 
 h1 {
-  margin: 0;
+  margin-top: 195px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 55px;
+  font-size: 36px;
+  letter-spacing: -1px;
+  margin-bottom: 0px;
+}
+
+.hero__p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 0px 30px;
+}
+
+.hero__ctas {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.hero__ctas a:nth-child(1) {
+  background-color: #fff;
+  color: #FF505C;
+  font-weight: 700;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  padding: 15px 17px;
+  border-radius: 28px;
+}
+
+.hero__ctas a:nth-child(2) {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  border-radius: 28px;
+  border: 1px solid #FFFFFF;
+  padding: 15px 17px;
 }
 
 /*# sourceMappingURL=app.css.map */
