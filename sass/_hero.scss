@@ -1,13 +1,19 @@
 @import "variables";
 
-
 .hero {
   height: 600px;
 
-  background: url("../images/bg-pattern-intro-mobile.svg") no-repeat left 
-  -327px top -244px,$gradient-primary;
+  background: url("../images/bg-pattern-intro-mobile.svg") no-repeat left -336px
+      top -244px,
+    $gradient-primary;
 
   border-radius: 0px 0px 0px 100px;
+
+  @media screen and (min-width: 1024px) {
+    background: url("../images/bg-pattern-intro-desktop.svg") no-repeat left -437px
+        top -1339px,
+      $gradient-primary;
+  }
 }
 
 .hero__content {
@@ -24,6 +30,22 @@ h1 {
   font-size: 36px;
   letter-spacing: -1px;
   margin-bottom: 0px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 54px;
+    line-height: 88px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 64px;
+    line-height: 98px;
+  }
+}
+
+h1 br {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .hero__p {
@@ -32,8 +54,13 @@ h1 {
   font-size: 18px;
   line-height: 27px;
   padding: 0px 30px;
-}
 
+  @media screen and (min-width: 1024px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+}
 
 // hero CTAs btns
 .hero__ctas {
@@ -58,6 +85,6 @@ h1 {
   font-weight: 700;
   font-family: $ff-secondary;
   border-radius: 28px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   padding: 15px 17px;
 }

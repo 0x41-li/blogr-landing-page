@@ -36,6 +36,7 @@ button {
   position: absolute;
   top: 56px;
   left: 0px;
+  right: 0px;
   padding: 0px 25px;
   width: 100%;
   height: 32px;
@@ -43,6 +44,21 @@ button {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    width: 90%;
+    margin: 0px auto;
+    height: auto;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    width: 100%;
+    gap: 64px;
+    padding: 0px 167px;
+  }
 }
 
 .logo {
@@ -55,6 +71,11 @@ button {
   height: 18px;
   cursor: pointer;
   overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .header__hum-icon {
+    display: none;
+  }
 }
 
 .header__hum-icon span {
@@ -104,6 +125,23 @@ nav {
   transform: scale(0.8);
   top: -80px;
 }
+@media screen and (min-width: 1024px) {
+  nav {
+    position: static;
+    flex: 1;
+    opacity: 1;
+    pointer-events: unset;
+    transform: scale(1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    box-shadow: unset;
+    margin-top: 0;
+    padding: 0;
+  }
+}
 
 nav.open {
   top: 0;
@@ -117,6 +155,13 @@ nav.open {
   flex-direction: column;
   gap: 24px;
   margin-bottom: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .header__menu {
+    flex-direction: row;
+    margin-bottom: 0;
+    gap: 48px;
+  }
 }
 
 .header__menu > li {
@@ -132,6 +177,15 @@ nav.open {
   font-size: 18px;
   line-height: 28px;
 }
+@media screen and (min-width: 1024px) {
+  .header__menu li a {
+    color: #fff;
+  }
+}
+
+.header__menu > li {
+  position: relative;
+}
 
 .header__menu > li > a {
   display: flex;
@@ -141,6 +195,21 @@ nav.open {
 
 .header__menu > li > a > img {
   transition: 0.6s;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__menu > li > a > img:nth-child(1) {
+    display: none;
+  }
+}
+
+.header__menu > li > a > img:nth-child(2) {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .header__menu > li > a > img:nth-child(2) {
+    display: block;
+  }
 }
 
 .header__sub-menu {
@@ -157,13 +226,31 @@ nav.open {
   border-radius: 5px;
   transition: 0.4s;
 }
+@media screen and (min-width: 1024px) {
+  .header__sub-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 140%;
+    top: 100%;
+  }
+}
 
 .header__sub-menu.open {
   margin-top: 24px;
   padding: 17px;
 }
+@media screen and (min-width: 1024px) {
+  .header__sub-menu.open {
+    padding: 24px;
+    margin-top: 27px;
+  }
+}
 
-.header__menu > li > a.open > img {
+.header__menu > li > a.open > img:nth-child(1) {
+  transform: rotate(-180deg);
+}
+
+.header__menu > li > a.open > img:nth-child(2) {
   transform: rotate(-180deg);
 }
 
@@ -181,10 +268,22 @@ nav.open {
   gap: 24px;
   padding: 25px;
 }
+@media screen and (min-width: 1024px) {
+  .header__ctas {
+    flex-direction: row;
+    border: none;
+    padding: 0;
+  }
+}
 
 .header__ctas a:nth-child(1) {
   color: #1F3E5A;
   font-weight: 300;
+}
+@media screen and (min-width: 1024px) {
+  .header__ctas a:nth-child(1) {
+    color: #fff;
+  }
 }
 
 .header__ctas a:nth-child(2) {
@@ -195,11 +294,22 @@ nav.open {
   padding: 15px 40px;
   border-radius: 28px;
 }
+@media screen and (min-width: 1024px) {
+  .header__ctas a:nth-child(2) {
+    background: #fff;
+    color: #FF505C;
+  }
+}
 
 .hero {
   height: 600px;
-  background: url("../images/bg-pattern-intro-mobile.svg") no-repeat left -327px top -244px, linear-gradient(135deg, #FF8F71, #FF3E55);
+  background: url("../images/bg-pattern-intro-mobile.svg") no-repeat left -336px top -244px, linear-gradient(135deg, #FF8F71, #FF3E55);
   border-radius: 0px 0px 0px 100px;
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    background: url("../images/bg-pattern-intro-desktop.svg") no-repeat left -437px top -1339px, linear-gradient(135deg, #FF8F71, #FF3E55);
+  }
 }
 
 .hero__content {
@@ -217,6 +327,24 @@ h1 {
   letter-spacing: -1px;
   margin-bottom: 0px;
 }
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 54px;
+    line-height: 88px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 64px;
+    line-height: 98px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 br {
+    display: none;
+  }
+}
 
 .hero__p {
   color: #fff;
@@ -224,6 +352,12 @@ h1 {
   font-size: 18px;
   line-height: 27px;
   padding: 0px 30px;
+}
+@media screen and (min-width: 1024px) {
+  .hero__p {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .hero__ctas {
@@ -248,7 +382,7 @@ h1 {
   font-weight: 700;
   font-family: "Ubuntu", Arial, Helvetica, sans-serif;
   border-radius: 28px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   padding: 15px 17px;
 }
 
