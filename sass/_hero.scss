@@ -1,0 +1,21 @@
+@import "variables";
+
+
+.hero {
+  height: 600px;
+
+  background: url("../images/bg-pattern-intro-mobile.svg") no-repeat left 
+  -327px top -244px,$gradient-primary;
+
+  border-radius: 0px 0px 0px 100px;
+
+  padding-top: 100px;
+}
+
+.hero__content {
+  display: none;
+}
+
+h1 {
+  margin: 0;
+}
