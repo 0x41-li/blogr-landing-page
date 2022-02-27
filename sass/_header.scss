@@ -211,13 +211,16 @@ nav.open {
     position: absolute;
     background-color: $white;
     width: 140%;
+    width: max-content;
     top: 100%;
   }
 }
 
 .header__sub-menu > li > a {
   color: #2d2e40;
-  font-weight: 400;
+  font-weight: 300;
+  opacity: 0.75;
+  font-size: 16px;
 }
 
 .header__sub-menu > li > a:hover {
@@ -250,12 +253,6 @@ nav.open {
 
 .header__menu > li > a.open > img:nth-child(2) {
   transform: rotate(-180deg);
-}
-
-.header__menu .header__sub-menu > li > a {
-  font-weight: 300;
-  opacity: 0.75;
-  font-size: 16px;
 }
 
 // nav ctas
