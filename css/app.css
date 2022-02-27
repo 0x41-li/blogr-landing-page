@@ -235,6 +235,27 @@ nav.open {
   }
 }
 
+.header__sub-menu > li > a {
+  color: #2d2e40;
+  font-weight: 400;
+}
+
+.header__sub-menu > li > a:hover {
+  font-weight: 700;
+}
+
+.header__menu__space-between-a-li {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .header__menu__space-between-a-li {
+    position: absolute;
+    height: 27px;
+    width: 140%;
+    top: 100%;
+  }
+}
+
 .header__sub-menu.open {
   margin-top: 24px;
   padding: 17px;
@@ -242,7 +263,7 @@ nav.open {
 @media screen and (min-width: 1024px) {
   .header__sub-menu.open {
     padding: 24px;
-    margin-top: 27px;
+    margin-top: 26px;
   }
 }
 
@@ -331,12 +352,14 @@ h1 {
   h1 {
     font-size: 54px;
     line-height: 88px;
+    margin-top: 205px;
   }
 }
 @media screen and (min-width: 1440px) {
   h1 {
     font-size: 64px;
     line-height: 98px;
+    margin-top: 225px;
   }
 }
 

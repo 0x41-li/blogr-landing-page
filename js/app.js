@@ -29,7 +29,7 @@
       // submenus showing
       linksWithSubMenus.each(function () {
         $(this).click(function () {
-          const currentSubmenu = $(this).next();
+          const currentSubmenu = $($(this).next()).next();
           const currentSubmenuHeight = $(currentSubmenu)[0].scrollHeight;
 
           $(this).toggleClass("open");
@@ -48,17 +48,21 @@
     } else {
       // hover event
       linksWithSubMenus.each(function () {
-        $(this).hover(function () {
-          const currentSubmenu = $(this).next();
+        const liParent = $(this).parent();
+        $(liParent).hover(function () {
+          const anchorEl = $(this).find(">:first-child");
+          const currentSubmenu = $($(anchorEl).next()).next();
+          const divOfTheSpaceBetween = $(anchorEl).next();
           const currentSubmenuHeight = $(currentSubmenu)[0].scrollHeight;
 
-          $(this).toggleClass("open");
+          $(anchorEl).toggleClass("open");
           $(currentSubmenu).toggleClass("open");
+          $(divOfTheSpaceBetween).toggle();
 
           if ($(currentSubmenu).hasClass("open")) {
             $(currentSubmenu).css(
               "height",
-              `${currentSubmenuHeight + 17 * 2}px`
+              `${currentSubmenuHeight + 24 * 2}px`
             );
           } else {
             $(currentSubmenu).removeAttr("style");
