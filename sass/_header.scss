@@ -161,6 +161,11 @@ nav.open {
   }
 }
 
+.header__menu > li > a:hover {
+  text-decoration:  underline 2px;
+  text-underline-offset: 2px;
+}
+
 .header__menu > li {
   position: relative;
 }
@@ -200,7 +205,7 @@ nav.open {
 
   height: 0px;
   overflow: hidden;
-  padding: 0;
+  padding: 0 17px;
   margin: 0;
 
   border-radius: 5px;
@@ -210,9 +215,12 @@ nav.open {
   @media screen and (min-width: 1024px) {
     position: absolute;
     background-color: $white;
-    width: 140%;
+    width: 150%;
     width: max-content;
     top: 100%;
+    padding: 0 27px;
+    align-items: flex-start;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
   }
 }
 
@@ -240,9 +248,9 @@ nav.open {
 // sub menu open
 .header__sub-menu.open {
   margin-top: 24px;
-  padding: 17px;
+  padding: 17px 17px;
   @media screen and (min-width: 1024px) {
-    padding: 24px;
+    padding: 24px 24px;
     margin-top: 26px;
   }
 }
@@ -289,8 +297,14 @@ nav.open {
   background: $gradient-primary;
   padding: 15px 40px;
   border-radius: 28px;
+  transition: all 0.4s;
   @media screen and (min-width: 1024px) {
     background: $white;
     color: $secondary-color;
   }
+}
+
+.header__ctas a:nth-child(2):hover {
+  background-color: #FF7B86;
+  color: $white;
 }

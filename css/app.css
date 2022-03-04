@@ -183,6 +183,11 @@ nav.open {
   }
 }
 
+.header__menu > li > a:hover {
+  text-decoration: underline 2px;
+  text-underline-offset: 2px;
+}
+
 .header__menu > li {
   position: relative;
 }
@@ -221,7 +226,7 @@ nav.open {
   width: 100%;
   height: 0px;
   overflow: hidden;
-  padding: 0;
+  padding: 0 17px;
   margin: 0;
   border-radius: 5px;
   transition: 0.4s;
@@ -230,9 +235,12 @@ nav.open {
   .header__sub-menu {
     position: absolute;
     background-color: #fff;
-    width: 140%;
+    width: 150%;
     width: max-content;
     top: 100%;
+    padding: 0 27px;
+    align-items: flex-start;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
   }
 }
 
@@ -261,11 +269,11 @@ nav.open {
 
 .header__sub-menu.open {
   margin-top: 24px;
-  padding: 17px;
+  padding: 17px 17px;
 }
 @media screen and (min-width: 1024px) {
   .header__sub-menu.open {
-    padding: 24px;
+    padding: 24px 24px;
     margin-top: 26px;
   }
 }
@@ -311,12 +319,18 @@ nav.open {
   background: linear-gradient(135deg, #FF8F71, #FF3E55);
   padding: 15px 40px;
   border-radius: 28px;
+  transition: all 0.4s;
 }
 @media screen and (min-width: 1024px) {
   .header__ctas a:nth-child(2) {
     background: #fff;
     color: #FF505C;
   }
+}
+
+.header__ctas a:nth-child(2):hover {
+  background-color: #FF7B86;
+  color: #fff;
 }
 
 .hero {
