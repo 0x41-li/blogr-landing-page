@@ -61,7 +61,6 @@ h1 br {
     font-size: 20px;
     line-height: 30px;
   }
-
 }
 
 // hero CTAs btns
@@ -79,9 +78,19 @@ h1 br {
   font-family: $ff-secondary;
   padding: 15px 17px;
   border-radius: 28px;
+  transition: all 0.4s;
+  width: 137px;
+  box-sizing: content-box;
+}
+
+.hero__ctas a:nth-child(1):hover {
+  background-color: #ff7b86;
+  color: $white;
 }
 
 .hero__ctas a:nth-child(2) {
+  width: 137px;
+  box-sizing: content-box;
   background-color: transparent;
   color: $white;
   font-weight: 700;
@@ -89,4 +98,10 @@ h1 br {
   border-radius: 28px;
   border: 1px solid #ffffff;
   padding: 15px 17px;
+  transition: all 0.4s;
+}
+
+.hero__ctas a:nth-child(2):hover {
+  background-color: $white;
+  color: #ff7b86;
 }

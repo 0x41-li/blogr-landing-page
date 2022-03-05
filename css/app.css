@@ -408,9 +408,19 @@ h1 {
   font-family: "Ubuntu", Arial, Helvetica, sans-serif;
   padding: 15px 17px;
   border-radius: 28px;
+  transition: all 0.4s;
+  width: 137px;
+  box-sizing: content-box;
+}
+
+.hero__ctas a:nth-child(1):hover {
+  background-color: #ff7b86;
+  color: #fff;
 }
 
 .hero__ctas a:nth-child(2) {
+  width: 137px;
+  box-sizing: content-box;
   background-color: transparent;
   color: #fff;
   font-weight: 700;
@@ -418,6 +428,12 @@ h1 {
   border-radius: 28px;
   border: 1px solid #ffffff;
   padding: 15px 17px;
+  transition: all 0.4s;
+}
+
+.hero__ctas a:nth-child(2):hover {
+  background-color: #fff;
+  color: #ff7b86;
 }
 
 /*# sourceMappingURL=app.css.map */
