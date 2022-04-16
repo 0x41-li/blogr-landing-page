@@ -441,7 +441,13 @@ h1 {
 }
 
 .second-section {
+  overflow-x: hidden;
   padding: 0 24px;
+}
+@media screen and (min-width: 1024px) {
+  .second-section {
+    padding: 0;
+  }
 }
 
 .second-section h2 {
@@ -453,6 +459,21 @@ h1 {
   line-height: 43px;
   letter-spacing: -0.84px;
   color: #1F3E5A;
+}
+
+@media screen and (min-width: 1024px) {
+  .second-section__row {
+    display: flex;
+    gap: 60px;
+    padding-left: 80px;
+  }
+}
+
+.second-section__illu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 2;
 }
 
 .second-section__illu img:nth-child(1) {
@@ -470,6 +491,14 @@ h1 {
 @media screen and (min-width: 1024px) {
   .second-section__illu img:nth-child(2) {
     display: block;
+    flex: 0 0 60%;
+    max-width: unset;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .second-section__text-part {
+    flex: 0 0 440px;
   }
 }
 
@@ -482,9 +511,19 @@ h1 {
   font-weight: 600;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 1024px) {
+  .second-section__text-part h3 {
+    text-align: left;
+  }
+}
 
 .second-section__text-part h3:nth-child(1) {
   margin-top: 46px;
+}
+@media screen and (min-width: 1024px) {
+  .second-section__text-part h3:nth-child(1) {
+    margin-top: 85px;
+  }
 }
 
 .second-section__text-part h3:nth-child(3) {
@@ -499,6 +538,11 @@ h1 {
   letter-spacing: 0.5px;
   font-family: "Overpass", Arial, Helvetica, sans-serif;
   font-weight: 400;
+}
+@media screen and (min-width: 1024px) {
+  .second-section__text-part p {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
