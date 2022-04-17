@@ -1,0 +1,44 @@
+.third-section {
+  margin-top: 272px;
+  padding-top: 1px;
+  border-radius: 0px 100px;
+
+  height: 625px;
+
+  background: url("../images/bg-pattern-circles.svg") no-repeat center bottom
+      258px / cover,
+    linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
+}
+
+// center the phones illu
+
+.third-section__illust {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: -173px;
+}
+
+.third-section__text-part {
+  padding: 0px 24px;
+
+  text-align: center;
+  color: #ffffff;
+  font-family: $ff-primary;
+}
+
+.third-section__text-part h2 {
+  font-size: 40px;
+  line-height: 61px;
+  letter-spacing: -1.2px;
+  font-weight: 600;
+}
+
+.third-section__text-part p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
