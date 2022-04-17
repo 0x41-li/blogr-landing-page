@@ -8,6 +8,31 @@
   background: url("../images/bg-pattern-circles.svg") no-repeat center bottom
       258px / cover,
     linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    height: 34vw;
+    margin-top: 57px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    background: url("../images/bg-pattern-circles.svg") no-repeat left -34vw top -60vw /
+        cover,
+      linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
+  }
+
+  @media screen and (min-width: 1440px) {
+    height: 400px;
+
+    padding-left: 120px;
+    padding-right: 165px;
+
+    gap: 38px;
+
+    background: url("../images/bg-pattern-circles.svg") no-repeat left -240px top -500px /
+        1014px 1018px,
+      linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
+  }
 }
 
 // center the phones illu
@@ -18,6 +43,25 @@
   align-items: center;
 
   margin-top: -173px;
+
+  @media screen and (min-width: 1024px) {
+    flex: 1;
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 40px;
+    justify-content: start;
+  }
+}
+
+.third-section__illust img {
+  @media screen and (min-width: 1024px) {
+    width: 54vw;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 552px;
+  }
 }
 
 .third-section__text-part {
@@ -26,6 +70,12 @@
   text-align: center;
   color: #ffffff;
   font-family: $ff-primary;
+
+  @media screen and (min-width: 1024px) {
+    flex: 1;
+
+    align-self: center;
+  }
 }
 
 .third-section__text-part h3 {
@@ -33,6 +83,10 @@
   line-height: 61px;
   letter-spacing: -1.2px;
   font-weight: 600;
+
+  @media screen and (min-width: 1024px) {
+    text-align: left;
+  }
 }
 
 .third-section__text-part p {
@@ -41,4 +95,8 @@
   line-height: 28px;
   letter-spacing: 0.5px;
   font-weight: 400;
+
+  @media screen and (min-width: 1024px) {
+    text-align: left;
+  }
 }
