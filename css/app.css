@@ -737,4 +737,48 @@ h1 {
   margin-top: 40px;
 }
 
+footer {
+  background: #24242c;
+  border-radius: 0px 100px 0px 0px;
+  height: 900px;
+  padding: 75px 24px;
+  margin-top: 100px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.footer-lists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.footer-lists__li-head {
+  font-size: 18px;
+  line-height: 33px;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer-lists__ul {
+  margin-top: 21px;
+}
+
+.footer-lists__ul a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 33px;
+  opacity: 0.75;
+}
+
 /*# sourceMappingURL=app.css.map */
