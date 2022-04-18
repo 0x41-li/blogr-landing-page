@@ -27,9 +27,9 @@
     padding-left: 120px;
     padding-right: 165px;
 
-    gap: 38px;
+    gap: 80px;
 
-    background: url("../images/bg-pattern-circles.svg") no-repeat left -240px top -500px /
+    background: url("../images/bg-pattern-circles.svg") no-repeat left -230px top -520px /
         1014px 1018px,
       linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
   }
@@ -46,7 +46,7 @@
 
   @media screen and (min-width: 1024px) {
     flex: 1;
-    margin-top: 30px;
+    margin-top: 3.5vw;
   }
   @media screen and (min-width: 1440px) {
     margin-top: 40px;
@@ -60,7 +60,7 @@
   }
 
   @media screen and (min-width: 1440px) {
-    width: 552px;
+    width: 666px;
   }
 }
 
@@ -75,6 +75,8 @@
     flex: 1;
 
     align-self: center;
+
+    padding: 0;
   }
 }
 

@@ -669,8 +669,8 @@ h1 {
     height: 400px;
     padding-left: 120px;
     padding-right: 165px;
-    gap: 38px;
-    background: url("../images/bg-pattern-circles.svg") no-repeat left -240px top -500px/1014px 1018px, linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
+    gap: 80px;
+    background: url("../images/bg-pattern-circles.svg") no-repeat left -230px top -520px/1014px 1018px, linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
   }
 }
 
@@ -683,7 +683,7 @@ h1 {
 @media screen and (min-width: 1024px) {
   .third-section__illust {
     flex: 1;
-    margin-top: 30px;
+    margin-top: 3.5vw;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -700,7 +700,7 @@ h1 {
 }
 @media screen and (min-width: 1440px) {
   .third-section__illust img {
-    width: 552px;
+    width: 666px;
   }
 }
 
@@ -714,6 +714,7 @@ h1 {
   .third-section__text-part {
     flex: 1;
     align-self: center;
+    padding: 0;
   }
 }
 
@@ -746,11 +747,36 @@ h1 {
   padding: 0px 24px;
   margin-top: 80px;
 }
+@media screen and (min-width: 1024px) {
+  .fourth-section {
+    display: flex;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .fourth-section {
+    gap: 104px;
+    margin-top: 116px;
+  }
+}
 
 .fourth-section__ilust {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .fourth-section__ilust {
+    flex: 1;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .fourth-section__ilust {
+    flex: 0 0 666px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -764,13 +790,35 @@ h1 {
 }
 @media screen and (min-width: 1024px) {
   .fourth-section img:nth-child(2) {
+    position: relative;
+    left: -11.5vw;
     display: block;
+    width: 60vw;
+    max-width: unset;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .fourth-section img:nth-child(2) {
+    left: -127px;
+    width: 974px;
   }
 }
 
 .fourth-section__text-part {
   margin-top: 46px;
   text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .fourth-section__text-part {
+    flex: 1;
+    text-align: left;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .fourth-section__text-part {
+    padding-right: 166px;
+  }
 }
 
 .fourth-section__text-part h3 {
@@ -793,6 +841,11 @@ h1 {
 
 .fourth-section__text-part h3:nth-child(3) {
   margin-top: 40px;
+}
+@media screen and (min-width: 1440px) {
+  .fourth-section__text-part h3:nth-child(3) {
+    margin-top: 64px;
+  }
 }
 
 footer {
