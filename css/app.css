@@ -878,6 +878,16 @@ footer {
   justify-content: center;
   margin-bottom: 72px;
 }
+@media screen and (min-width: 1024px) {
+  .footer-logo {
+    margin-left: 5%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer-logo {
+    margin-left: 0px;
+  }
+}
 
 .footer-lists {
   display: flex;
@@ -890,13 +900,16 @@ footer {
   .footer-lists {
     flex-direction: row;
     align-items: flex-start;
-    gap: 140px;
+    justify-content: space-around;
+    flex: 1;
     text-align: left;
+    margin-right: 5%;
   }
 }
 @media screen and (min-width: 1440px) {
   .footer-lists {
     gap: 200px;
+    margin-right: 0px;
   }
 }
 
@@ -920,6 +933,10 @@ footer {
   font-size: 18px;
   line-height: 33px;
   opacity: 0.75;
+}
+
+.footer-lists__ul a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=app.css.map */

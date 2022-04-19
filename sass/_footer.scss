@@ -32,6 +32,14 @@ footer {
   justify-content: center;
 
   margin-bottom: 72px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 5%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-left: 0px;
+  }
 }
 
 .footer-lists {
@@ -47,13 +55,17 @@ footer {
     flex-direction: row;
     align-items: flex-start;
 
-    gap: 140px;
+    justify-content: space-around;
+    flex: 1;
 
     text-align: left;
+
+    margin-right: 5%;
   }
 
   @media screen and (min-width: 1440px) {
     gap: 200px;
+    margin-right: 0px;
   }
 }
 
@@ -83,4 +95,8 @@ footer {
   line-height: 33px;
 
   opacity: 0.75;
+}
+
+.footer-lists__ul a:hover {
+  text-decoration: underline;
 }
