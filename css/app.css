@@ -862,7 +862,7 @@ footer {
     display: flex;
     align-items: flex-start;
     gap: 180px;
-    height: 395px;
+    height: 359px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -912,6 +912,7 @@ footer {
   .footer-lists {
     gap: 200px;
     margin-right: 0px;
+    justify-content: unset;
   }
 }
 
