@@ -671,6 +671,7 @@ h1 {
     padding-right: 165px;
     gap: 80px;
     background: url("../images/bg-pattern-circles.svg") no-repeat left -230px top -520px/1014px 1018px, linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
+    margin-top: 0px;
   }
 }
 
