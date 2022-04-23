@@ -55,6 +55,9 @@
           const divOfTheSpaceBetween = $(anchorEl).next();
           const currentSubmenuHeight = $(currentSubmenu)[0].scrollHeight;
 
+          console.log($($(currentSubmenu)[0]).width());
+          
+
           $(anchorEl).toggleClass("open");
           $(currentSubmenu).toggleClass("open");
           $(divOfTheSpaceBetween).toggle();
@@ -63,6 +66,10 @@
             $(currentSubmenu).css(
               "height",
               `${currentSubmenuHeight + 24 * 2}px`
+            );
+            $(currentSubmenu).css(
+              "width",
+              `${$($(currentSubmenu)[0]).width() + 30 * 2}px`
             );
           } else {
             $(currentSubmenu).removeAttr("style");

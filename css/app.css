@@ -277,7 +277,7 @@ nav.open {
 }
 @media screen and (min-width: 1024px) {
   .header__sub-menu.open {
-    padding: 24px 24px;
+    padding: 24px 30px;
     margin-top: 26px;
   }
 }
