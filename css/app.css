@@ -59,7 +59,7 @@ button {
 }
 @media screen and (min-width: 1440px) {
   .header {
-    width: 100%;
+    width: 1440px;
     gap: 64px;
     padding: 0px 167px;
   }
@@ -940,6 +940,11 @@ footer {
 
 .footer-lists__ul a:hover {
   text-decoration: underline;
+}
+
+.app-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=app.css.map */
